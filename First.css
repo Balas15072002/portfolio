@@ -20,34 +20,52 @@ body {
   position: absolute;
   height: 100vh;
 }
+
 .navbar1 {
   position: absolute;
-  color: #ffffff;
-  left: 150px;
+  width: 90%;
+  height: 80px;
   top: 30px;
+  left: 5%;
+  position:fixed;
+  z-index:30;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding-left: 50px;
+  padding-top: 30px;
+
 }
+
 .navbar1 nav {
   display: flex;
 }
 .navbar1 h4 {
-  margin-left: -50px;
-  margin-top: 10px;
+  margin-top: -10px;
   font-size: 32px;
   font-weight: 700;
+  color: #ffffff;
+
 }
 .navbar1 ul {
-  margin-top: 10px;
+  margin-top: -10px;
   display: flex;
   padding-top: 10px;
 }
-.navbar1 li {
+.navbar1 li{
+list-style-type: none;
+}
+.navbar1 a {
   font-size: 12px;
   list-style-type: none;
   padding-left: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: #14b789;
 }
+
 .Navbaricon span {
   position: absolute;
-  top: 7px;
+  top: 17px;
   background-color: #ffffff;
   width: 47px;
   height: 47px;
@@ -69,6 +87,13 @@ body {
   padding: 15px 35px;
   border-width: 2px;
   font-weight: 700;
+  letter-spacing: 1px;
+}
+.button a:hover{
+  background-color: #ffffff;
+  color: #14b789;
+  border: 2px solid #14b789;
+
 }
 .content1 {
   position: absolute;
@@ -113,6 +138,9 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.5;
+}
+.content1 a:hover{
+  background: #14b789;
 }
 .image2 {
   position: absolute;
@@ -281,9 +309,8 @@ tr .data2 {
   max-width: 130px;
   margin-left: 130px;
 }
-.imageContainer img:hover{
+.imageContainer img:hover {
   transform: scale(1.5);
-
 }
 
 .section5 {
@@ -325,14 +352,57 @@ tr .data2 {
   left: 10%;
   margin-top: -35px;
 }
+
 .card {
   border: 2px solid transparent;
   width: 510px;
   height: 70vh;
   margin: 20px;
   border-radius: 20px;
+  overflow: hidden;
+
 }
-.card:hover{
+
+
+
+.card:hover {
+  border: 2px solid #14b789;
+}
+.card:hover .material-symbols-outlined {
+  background-color: #14b789;
+  color: #ffffff;
+}
+.card:hover .cardNumber:hover{
+  background: #14b789;
+}
+.cardNumberBorder1:hover,
+.cardNumberBorder2:hover,
+.cardNumberBorder3:hover,
+.cardNumberBorder4:hover {
+  background-color: #535da1;
+}
+
+
+
+.card .material-symbols-outlined:hover .card {
+  border: 2px solid #14b789;
+}
+
+
+
+
+
+
+i:hover {
+  background-color: #14b789;
+  color: #ffffff;
+}
+.card:hover i {
+  background-color: #14b789;
+  color: #ffffff;
+}
+
+i:hover .card {
   border: 2px solid #14b789;
 }
 .card h3 {
@@ -358,6 +428,48 @@ tr .data2 {
   margin-top: -90px;
   margin-left: 370px;
 }
+
+.cardNumberBorder1{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: #14b789;
+  top: 168px;
+  left: 41.7%;
+  border-top-right-radius: 80%;
+  border-bottom-left-radius: 100%;
+}
+.cardNumberBorder2{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: #14b789;
+  top: 117px;
+  left: 86.95%;
+  border-top-right-radius: 80%;
+  border-bottom-left-radius: 100%;
+}
+.cardNumberBorder3{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: #14b789;
+  top: 785.5px;
+  left: 41.7%;
+  border-top-right-radius: 80%;
+  border-bottom-left-radius: 100%;
+}
+.cardNumberBorder4{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: #14b789;
+  top: 735px;
+  left: 86.95%;
+  border-top-right-radius: 80%;
+  border-bottom-left-radius: 100%;
+}
+
 .card .cardAbout {
   font-size: 18px;
   font-weight: 400;
@@ -379,13 +491,17 @@ tr .data2 {
   margin-left: 50px;
   margin-top: -230px;
 }
+.card a:hover{
+  background: #14b789;
+  color: #ffffff;
+}
 .cards .cardDown {
   margin-top: 50px;
 }
 
 .cardIcon1 .material-symbols-outlined {
   position: absolute;
-  border: 1px solid black;
+  border: 1px solid #e9eaeb;
   border-radius: 18px;
   height: 18.5%;
   width: 20%;
@@ -394,9 +510,9 @@ tr .data2 {
   font-size: 120px;
   text-align: center;
   padding-top: 60px;
-  transform: rotate(-35deg) translate(55px);
-  
+  transform: rotate(-35deg) translateY(55px);
 }
+
 .cardIcon2 .material-symbols-outlined {
   position: absolute;
   border: 1px solid #e9eaeb;
@@ -408,6 +524,7 @@ tr .data2 {
   font-size: 120px;
   text-align: center;
   padding-top: 60px;
+  transform: rotate(-35deg) translateY(55px);
 }
 .cardIcon3 i {
   position: absolute;
@@ -420,7 +537,10 @@ tr .data2 {
   font-size: 120px;
   text-align: center;
   padding-top: 60px;
+  transform: rotate(-35deg) translateY(55px);
 }
+
+
 .cardIcon4 i {
   position: absolute;
   border: 1px solid #e9eaeb;
@@ -432,6 +552,7 @@ tr .data2 {
   font-size: 120px;
   text-align: center;
   padding-top: 60px;
+  transform: rotate(-35deg) translateY(55px);
 }
 .section6 {
   height: 160vh;
@@ -479,10 +600,16 @@ tr .data2 {
   border-radius: 20px;
 }
 .slideCard {
-  border: 2px solid black;
+  border: 2px solid #ffffff;
   border-radius: 20px;
   width: 29%;
   margin-left: 30px;
+}
+.slideCard:hover{
+  border: 2px solid #14b789;
+}
+.photo img:hover{
+  transform: rotate(0deg);
 }
 .slideCard small {
   position: absolute;
@@ -503,6 +630,8 @@ tr .data2 {
   height: 350px;
   width: 80%;
   margin-left: 40px;
+  transform: rotate(10deg);
+
 }
 .section7 {
   height: 116vh;
@@ -560,6 +689,10 @@ tr .data2 {
   display: inline-block;
   color: #717275;
 }
+.servicesfooter a:hover{
+  background: #14b789;
+  color: #ffffff;
+}
 .servicesfooter strong {
   font-size: 12px;
   font-weight: 700;
@@ -586,6 +719,10 @@ tr .data2 {
   width: 190%;
   text-align: center;
   padding: 7px;
+}
+.stayConnected a:hover{
+  background: #14b789;
+  color: #ffffff;
 }
 .startAProject strong {
   font-size: 12px;
@@ -632,6 +769,9 @@ tr .data2 {
   height: 60px;
   margin-left: 30px;
 }
+.row1 input:hover{
+border: 2px solid #14b789;
+}
 .row2 {
   display: flex;
   height: 120px;
@@ -655,7 +795,10 @@ tr .data2 {
   height: 100px;
   background-color: #ffffff;
 }
+.checkboxs [type="checkbox"]:hover{
+  border: 2px solid #14b789;
 
+}
 .checkbox1 .material-symbols-outlined {
   position: absolute;
   top: 803%;
@@ -710,6 +853,13 @@ tr .data2 {
   width: 95%;
   margin-left: 30.5px;
   position: relative;
+  border: 2px solid #e9eaeb;
+
+}
+
+.textarea textarea:hover{
+  border: 2px solid #14b789;
+
 }
 .footerButton button {
   background-color: #14b789;
@@ -723,6 +873,9 @@ tr .data2 {
   margin-top: 15px;
   left: 85.5%;
   font-size: 1rem;
+}
+.footerButton button:hover{
+  background: #535da1;
 }
 footer {
   text-align: center;
